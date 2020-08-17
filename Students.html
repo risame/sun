@@ -4,6 +4,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Sun's website</title>
+
+    <!-- added by aponder START -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- added by aponder END -->
+    
     <link type="text/css" ; href="home.css" ; rel="stylesheet" />
     <style type="text/css">
     body {
@@ -25,44 +30,11 @@
 </head>
 
 <body>
-    <div>
         <!--总背景-->
         <div style="width:1000px; height:1283px; background-image:url(pic/02.jpg); margin:auto ">
+            <div id="header"></div>
             <!--居中-->
             <div style="width:1000px; height:323px; background-image:url(pic/title.jpg)">
-                <!--BANNER-->
-                <div style="width:1000px; height:68px; background-image:url(pic/banner.jpg);padding: 0 7px;">
-                    <!--导航部分-->
-                    <div id=lapA><a href="index.html">HOME</a></div>
-                    <div id=lapA><a href="project.html">PROJECTS</a></div>
-                    <div id=lapA><a href="papers.html">PUBLICATIONS</a></div>
-                    <div id=lapA><a href="Students.html">STUDENTS</a></div>
-                    <div id=lapA><a href="Teaching.html">TEACHING</a></div>
-                    <div id=lapA><a href="Awards.html">AWARDS</a></div>
-                    <div id=lapA><a href="Links.html">LINKS</a></div>
-                </div>
-                <div style="width:1000px; height:270px; background-image:url(pic/img03.jpg); border-radius:10px 10px 0 0">
-                    <!--简介-->
-                    <div style=" width:168px; height:235px; margin-left:100px; margin-top:10px; float:left;background-image:url(pic/sun3.jpg)">
-                    </div>
-                    <div style=" width:580px; height:235px; margin-left:130px; margin-top:20px; float:left">
-                        <span style="color:#2F2F2F; font-size:40px">Xiaobing Sun(孙小兵)<br/></span>
-                        <a href="https://orcid.org/0000-0001-5165-5080" target="orcid.widget" rel="noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.5em;" alt="ORCID iD icon">orcid.org/0000-0001-5165-5080</a>
-                        <span style="color:#2F2F2F; float:left; width:250; margin-top:30px"><br/>Associate Professor<br/>
-                              Room 515<br/>
-                              School of Information Engineering<br/>
-                              Yangzijin Campus, Yangzhou University<br/>
-                              Yangzhou, China, 225127<br/>
-                              Email: xbsun AT yzu DOT edu DOT cn
-                        </span>
-                        <span style="color:#2F2F2F; float:left; width:200; margin-left:30px; margin-top:30px"><br/>副教授<br/>
-                              扬州大学扬子津校区<br/>
-                              信息工程学院<br/>
-                              软件工程系<br/>
-                              515室<br/>
-                        </span>
-                    </div>
-                </div>
                 <div style="width:1000px; height:860px; background-image:url(pic/img09.jpg)">
                     <!--各分页内容-->
                     <div id=detail style="width:880px; height:720px; margin-left:60px; float:left; margin-top:30px">
@@ -109,6 +81,10 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            $('#header').load('_header.html')
+          </script>
 </body>
 
 </html>
